@@ -1,8 +1,8 @@
 dependencies:
-  svelte-kit-cookie-session: 0.2.8
+  svelte-kit-cookie-session: 0.3.7
 devDependencies:
-  '@sveltejs/adapter-node': 1.0.0-next.10
-  '@sveltejs/kit': 1.0.0-next.64_svelte@3.36.0+vite@2.1.5
+  '@sveltejs/adapter-node': 1.0.0-next.11
+  '@sveltejs/kit': 1.0.0-next.65_svelte@3.36.0+vite@2.1.5
   '@typescript-eslint/eslint-plugin': 4.20.0_7448dc1756632cc6400f187319207d38
   '@typescript-eslint/parser': 4.20.0_eslint@7.23.0+typescript@4.2.3
   autoprefixer: 10.2.5_postcss@8.2.9
@@ -97,11 +97,11 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-TrBhfJkFxA+ER+ew2U2/fHbebhLT/l/2pRk0hfj9KusXUuRXd2v0R58AfaZK9VXDQ4TogOSEmICVrQAA3zFnHQ==
-  /@sveltejs/adapter-node/1.0.0-next.10:
+  /@sveltejs/adapter-node/1.0.0-next.11:
     dev: true
     resolution:
-      integrity: sha512-v62a9nQguK53ldwBp4FizvwW1Kh2wOZBjJKGlnZFhO9e1Z/LoIqR9LH5dVHz9d5K19or5ap3hRdS91WkkDgu4w==
-  /@sveltejs/kit/1.0.0-next.64_svelte@3.36.0+vite@2.1.5:
+      integrity: sha512-TUMUgPMsYXF1D5JODRLWG34zeLg2a4e2/GJYK3nTfBtPoqUqgnsCCuE+H/B2OAfy7QZlAdjdT7Gj2tVOxGxlZQ==
+  /@sveltejs/kit/1.0.0-next.65_svelte@3.36.0+vite@2.1.5:
     dependencies:
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.5_svelte@3.36.0+vite@2.1.5
       cheap-watch: 1.0.3
@@ -114,7 +114,7 @@ packages:
       svelte: ^3.32.1
       vite: ^2.1.0
     resolution:
-      integrity: sha512-ccLesgGBDEkbYnz9j+xHfwkO6EF/oka9sPS+OEsveN5gmYF3o7j13Q8lZQgyXOTuUnnB+WDsklHL36ihWZzNkw==
+      integrity: sha512-wPUQENlSVgOz6y/Xwy+FB8Gefr0KAnjRf651NFTeYBniMDnZ9iUyS7fUqrWHOdJ8SRdoHg7s2/Zer+rU5JCDIw==
   /@sveltejs/vite-plugin-svelte/1.0.0-next.5_svelte@3.36.0+vite@2.1.5:
     dependencies:
       '@rollup/pluginutils': 4.1.0
@@ -2508,12 +2508,12 @@ packages:
       svelte: '>=3.19.0'
     resolution:
       integrity: sha512-gagW62pLQ2lULmvNA3pIZu9pBCYOaGu3rQikUOv6Nokz5VxUgT9/mQLfMxj9phDEKHCg/lgr3i6PkqZDbO9P2Q==
-  /svelte-kit-cookie-session/0.2.8:
+  /svelte-kit-cookie-session/0.3.7:
     dependencies:
       salteen: 1.0.0
     dev: false
     resolution:
-      integrity: sha512-6LD71G0FjzwEQUSjlCFdLGDaIJ5cGmbrEb+BDSL7+6avHO23IfvU5i5oCqXCBnLHh6j4wDXuIh7m3YxXDsJYuQ==
+      integrity: sha512-UR8G3rSra7/wOuC6t84fypq4YDIXCo72IHacTz41uytWfQjwml5RRlLbMe4fVuIRCdtocXvTmLHcGAMxwXWjLA==
   /svelte-preprocess/4.7.0_ba39837f8c04f700f1fad6ad00980621:
     dependencies:
       '@types/pug': 2.0.4
@@ -2819,7 +2819,7 @@ packages:
       integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 specifiers:
   '@sveltejs/adapter-node': next
-  '@sveltejs/kit': next
+  '@sveltejs/kit': ^1.0.0-next.65
   '@typescript-eslint/eslint-plugin': ^4.19.0
   '@typescript-eslint/parser': ^4.19.0
   autoprefixer: ^10.2.5
@@ -2832,7 +2832,7 @@ specifiers:
   prettier: ~2.2.1
   prettier-plugin-svelte: ^2.2.0
   svelte: ^3.36.0
-  svelte-kit-cookie-session: ^0.2.8
+  svelte-kit-cookie-session: 0.3.7
   svelte-preprocess: ^4.6.9
   tailwindcss: ^2.0.3
   tslib: ^2.0.0

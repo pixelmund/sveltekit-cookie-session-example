@@ -1,6 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { RequestHandler } from '@sveltejs/kit';
 
-export const post: RequestHandler = function ({ context, body }) {
+export const post: RequestHandler<any, Record<string, any>> = function ({ body, context }) {
+	if (body?.expires) {
+		throw new Error('Cannot set expiration date from payload');
+	}
+
 	context.session.data = body;
 
 	return {
@@ -9,8 +14,14 @@ export const post: RequestHandler = function ({ context, body }) {
 	};
 };
 
-export const put: RequestHandler = function ({ context, body }) {
-	context.session.data = body;
+export const put: RequestHandler<any, Record<string, any>> = function ({ body, context }) {
+	if (body?.expires) {
+		throw new Error('Cannot set expiration date from payload');
+	}
+	if (body) {
+		context.session.data = body;
+	}
+
 	context.session.refresh = true;
 
 	return {
@@ -19,7 +30,7 @@ export const put: RequestHandler = function ({ context, body }) {
 	};
 };
 
-export const del: RequestHandler = function ({ context }) {
+export const del: RequestHandler<any, Record<string, any>> = function ({ context }) {
 	context.session.destroy = true;
 
 	return {

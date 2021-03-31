@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { session } from '$lib/session';
+
 	let username = $session.username;
 	async function setSession() {
 		try {
