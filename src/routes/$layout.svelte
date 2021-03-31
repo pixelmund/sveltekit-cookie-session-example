@@ -7,7 +7,11 @@
 	const { session } = getStores();
 
 	onMount(() => {
-		initializeSession(session);
+		const unsub = initializeSession(session);
+
+		return () => {
+			unsub();
+		};
 	});
 </script>
 

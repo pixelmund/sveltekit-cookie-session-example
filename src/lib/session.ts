@@ -9,11 +9,12 @@ let updating: boolean = false;
 let prevSession: any = {};
 
 export function initializeSession(sess: Writable<any>) {
-	sess.subscribe((val: any) => {
+	const unsubscriber = sess.subscribe((val: any) => {
 		if (!updating) {
 			prevSession = val;
 		}
 	});
+	return unsubscriber;
 }
 
 async function handleSession(method: 'POST' | 'PUT' | 'DELETE', value: any, opts: Options) {
